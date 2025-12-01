@@ -55,7 +55,7 @@ export const burgers: BurgerItem[] = [
 export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Margarita',
-    description: 'Sauce tomate, mozzarella, olives noires, origan',
+    description: '🍅 Sauce tomate, 🧀 mozzarella, olives noires, origan',
     price33: '7.00',
     price40: '9.00',
     price50: null,
@@ -63,7 +63,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Végétarienne',
     description:
-      'Sauce tomate, mozzarella, champignons, oignons, poivron, olives noires, tomates fraîches, origan',
+      '🥬 Sauce tomate, mozzarella, 🍄 champignons, oignons, poivron, olives noires, tomates fraîches, origan',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
@@ -71,14 +71,14 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Thonata',
     description:
-      'Sauce tomate, mozzarella, thon, oignons, olives noires, emmental',
+      '🐟 Sauce tomate, mozzarella, thon, oignons, olives noires, emmental',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
   },
   {
     name: "L'Anchois",
-    description: 'Sauce tomate, mozzarella, anchois, câpres, olives noires',
+    description: '🐟 Sauce tomate, mozzarella, anchois, câpres, olives noires',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
@@ -86,7 +86,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: "L'Océane",
     description:
-      'Sauce tomate, mozzarella, fruits de mer, persillade, jus de citron',
+      '🦐 Sauce tomate, mozzarella, fruits de mer, persillade, 🍋 jus de citron',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
@@ -94,7 +94,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Reine',
     description:
-      'Sauce tomate, mozzarella, jambon de dinde, double champignons, olives noires, origan',
+      '👑 Sauce tomate, mozzarella, jambon de dinde, 🍄 double champignons, olives noires, origan',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
@@ -102,14 +102,14 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: "L'Orientale",
     description:
-      'Sauce tomate, mozzarella, double merguez, poivron, oignons, olives noires',
+      '🌶️ Sauce tomate, mozzarella, double merguez, poivron, oignons, olives noires',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
   },
   {
     name: 'La 4 fromages',
-    description: 'Sauce ou crème légère, mozzarella, chèvre, emmental, bleu',
+    description: '🧀 Sauce ou crème légère, mozzarella, chèvre, emmental, bleu',
     price33: '9.00',
     price40: '12.00',
     price50: '15.00',
@@ -117,7 +117,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Buffalo',
     description:
-      'Sauce barbecue, mozzarella, viande hachée, champignons, chorizo de boeuf',
+      '🔥 Sauce barbecue, mozzarella, viande hachée, 🍄 champignons, chorizo de boeuf',
     price33: '10.00',
     price40: '13.00',
     price50: '16.00',
@@ -125,7 +125,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Campione',
     description:
-      'Sauce tomate, mozzarella, boeuf épicé, oeuf, olives noires, emmental',
+      '🏆 Sauce tomate, mozzarella, boeuf épicé, 🥚 oeuf, olives noires, emmental',
     price33: '10.00',
     price40: '13.00',
     price50: '16.00',
@@ -133,7 +133,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Kebab',
     description:
-      'Sauce tomate, mozzarella, kebab de volailles rôties et marinées, poivron, oignons, crème fraîche, champignons, origan',
+      '🥙 Sauce tomate, mozzarella, kebab de volailles rôties et marinées, poivron, oignons, crème fraîche, 🍄 champignons, origan',
     price33: '10.00',
     price40: '13.00',
     price50: '16.00',
@@ -141,7 +141,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Bolognaise Suprême',
     description:
-      'Sauce tomate, double mozzarella, double boulettes de boeuf épicé, champignons, emmental',
+      '🍝 Sauce tomate, double mozzarella, double boulettes de boeuf épicé, 🍄 champignons, emmental',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -149,7 +149,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Carnivore',
     description:
-      'Sauce tomate ou barbecue, mozzarella, filet de poulet mariné, boeuf épicé, merguez',
+      '🥩 Sauce tomate ou barbecue, mozzarella, filet de poulet mariné, boeuf épicé, merguez',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -157,7 +157,7 @@ export const pizzasBaseTomate: PizzaItem[] = [
   {
     name: 'La Chef',
     description:
-      'Sauce tomate ou crème légère, mozzarella, jambon de dinde, filet de poulet mariné, chorizo de boeuf, boeuf épicé, poivron, olives noires',
+      '⭐ Sauce tomate ou crème légère, mozzarella, jambon de dinde, 🍗 filet de poulet mariné, chorizo de boeuf, boeuf épicé, poivron, olives noires',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -168,7 +168,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: 'La Savoyarde',
     description:
-      'Crème légère, mozzarella, lardons de veau fumés, pomme de terre, reblochon',
+      '🏔️ Crème légère, mozzarella, lardons de veau fumés, 🥔 pomme de terre, reblochon',
     price33: '10.00',
     price40: '13.00',
     price50: '16.00',
@@ -176,7 +176,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: 'La Norvégienne',
     description:
-      'Crème légère, mozzarella, saumon fumé, persillade, jus de citron',
+      '🐟 Crème légère, mozzarella, saumon fumé, persillade, 🍋 jus de citron',
     price33: '10.00',
     price40: '13.00',
     price50: '16.00',
@@ -184,7 +184,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: 'La Boisée',
     description:
-      'Crème légère, mozzarella, filet de poulet mariné, poivron, sauce gruyère',
+      '🌲 Crème légère, mozzarella, 🍗 filet de poulet mariné, poivron, sauce gruyère',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -192,7 +192,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: 'La Boisée Suprême',
     description:
-      'Crème légère, mozzarella, filet de poulet mariné, poivron, champignons, pomme de terre, oignons, sauce gruyère',
+      '🌲⭐ Crème légère, mozzarella, 🍗 filet de poulet mariné, poivron, 🍄 champignons, 🥔 pomme de terre, oignons, sauce gruyère',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -200,7 +200,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: "L'Indienne",
     description:
-      'Crème légère, mozzarella, oignons, filet de poulet curry, kebab de volailles, pomme de terre',
+      '🍛 Crème légère, mozzarella, oignons, filet de poulet curry, kebab de volailles, 🥔 pomme de terre',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -208,7 +208,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: 'La Chicken',
     description:
-      'Crème légère, mozzarella, filet de poulet, oignons, jambon de dinde, sauce barbecue',
+      '🍗 Crème légère, mozzarella, filet de poulet, oignons, jambon de dinde, 🔥 sauce barbecue',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -216,7 +216,7 @@ export const pizzasBaseCreme: PizzaItem[] = [
   {
     name: 'La Forestière',
     description:
-      'Crème légère, mozzarella, lardons de veau fumés, oignons, jambon de dinde, champignons, origan',
+      '🌳 Crème légère, mozzarella, lardons de veau fumés, oignons, jambon de dinde, 🍄 champignons, origan',
     price33: '11.00',
     price40: '14.00',
     price50: '17.00',
@@ -227,44 +227,44 @@ export const sandwichs: SandwichItem[] = [
   {
     name: 'Miche',
     description:
-      'Viandes au choix : Escalope, Merguez, Steak, Cordon Bleu, Nuggets',
+      '🥖 Viandes au choix : Escalope, Merguez, Steak, Cordon Bleu, Nuggets',
     price: '5.50',
     priceChicken: '6.50',
   },
   {
     name: 'Tacos',
-    description: 'Viandes au choix avec frites, sauce fromagère',
+    description: '🌯 Viandes au choix avec 🍟 frites, 🧀 sauce fromagère',
     price: '8.00',
   },
   {
     name: 'Maxi Tacos',
-    description: 'Format XXL avec viandes au choix, frites, sauce fromagère',
+    description: '🌯💪 Format XXL avec viandes au choix, 🍟 frites, 🧀 sauce fromagère',
     price: '10.00',
   },
   {
     name: 'Galette',
-    description: 'Galette grillée avec viandes au choix',
+    description: '🫓 Galette grillée avec viandes au choix',
     price: '8.00',
   },
   {
     name: 'Roulé',
-    description: '180g de viande, wrap grillé',
+    description: '🌯 180g de viande, wrap grillé',
     price: '9.50',
     badge: '180g de viande',
   },
   {
     name: 'Hummer',
-    description: 'Sandwich gourmand avec viande au choix',
+    description: '🥪 Sandwich gourmand avec viande au choix',
     price: '6.00',
   },
   {
     name: 'Panini',
-    description: 'Fromages, jambon, steak',
+    description: '🥪 Fromages, jambon, steak',
     price: '7.50',
   },
   {
     name: 'Brass',
-    description: 'Sandwich spécial maison',
+    description: '⭐ Sandwich spécial maison',
     priceMenu: '7.00',
     priceSingle: '5.00',
   },
@@ -273,28 +273,28 @@ export const sandwichs: SandwichItem[] = [
 export const salades: SaladeItem[] = [
   {
     name: 'Du Jour',
-    description: 'Salade verte, tomate, maïs, olive',
+    description: '🥗 Salade verte, 🍅 tomate, 🌽 maïs, olive',
     price: '6.00',
   },
   {
     name: 'Fraîcheur',
-    description: 'Salade verte, jambon de dinde, emmental, émincé de volaille',
+    description: '🥗 Salade verte, jambon de dinde, 🧀 emmental, émincé de volaille',
     price: '6.00',
   },
   {
     name: 'Chèvre Chaud',
-    description: 'Salade verte, maïs, emmental, mozza, toast de chèvre chaud',
+    description: '🥗 Salade verte, 🌽 maïs, emmental, mozza, 🧀🔥 toast de chèvre chaud',
     price: '6.00',
   },
   {
     name: 'Nordique',
-    description: 'Salade verte, saumon fumé, olives noires, tomate',
+    description: '🥗 Salade verte, 🐟 saumon fumé, olives noires, 🍅 tomate',
     price: '6.00',
   },
   {
     name: '153',
     description:
-      'Salade verte, tomate, emmental, mozza, maïs, thon, jambon de dinde, fromage de chèvre',
+      '⭐ Salade verte, 🍅 tomate, emmental, mozza, 🌽 maïs, 🐟 thon, jambon de dinde, 🧀 fromage de chèvre',
     price: '6.50',
   },
 ]
@@ -302,19 +302,22 @@ export const salades: SaladeItem[] = [
 export const desserts: DessertItem[] = [
   {
     name: 'Glaces',
-    description: 'Häagen-Dazs - Différents parfums',
+    description: '🍨 Häagen-Dazs - Différents parfums',
     price: '3.00',
   },
   {
     name: 'Tiramisu Maison',
+    description: '🍰 Fait maison',
     price: '3.50',
   },
   {
     name: 'Brownie',
+    description: '🍫 Chocolat fondant',
     price: '3.50',
   },
   {
     name: 'Salade de Fruits',
+    description: '🍓 Fruits frais de saison',
     price: '3.00',
   },
 ]
