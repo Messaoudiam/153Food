@@ -353,5 +353,5 @@ export const boissons: BoissonItem[] = [
 export const menuInfo = {
   burgerMenuIncludes: 'Menu burger : frites + boisson',
   specialOffer: 'Offre spéciale : Pizza 40cm au prix du 33cm (Lundi - Jeudi)',
-  deliveryInfo: "Livraison à 0.50€ dès 15€ d'achat sur Lyon 5ème",
+  deliveryInfo: "Livraison gratuite dès 15€ d&apos;achat* (minimum variable selon secteur)",
 }

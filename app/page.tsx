@@ -56,7 +56,7 @@ export default function Home() {
               className="gap-2 rounded-full bg-white px-4 py-2 text-sm text-green-700 shadow-lg md:text-base"
             >
               <Truck className="h-5 w-5" aria-hidden="true" />
-              Livraison à 0.50€ seulement - Dès 15€ d&apos;achat
+              Livraison GRATUITE dès 15€ d&apos;achat*
             </Badge>
           </div>
 
@@ -337,8 +337,8 @@ export default function Home() {
               },
               {
                 icon: Truck,
-                title: 'Livraison 0.50€',
-                description: "Lyon 5ème - Dès 15€ d'achat",
+                title: 'Livraison gratuite',
+                description: "Dès 15€ selon secteur",
                 color: 'bg-blue-100 text-blue-600',
               },
               {

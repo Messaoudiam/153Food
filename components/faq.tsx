@@ -18,7 +18,7 @@ const faqs: FAQItem[] = [
   {
     question: 'Livrez-vous à domicile ? Quels sont les frais ?',
     answer:
-      "Oui, nous livrons sur Lyon 5ème pour seulement 0.50€ à partir de 15€ d'achat ! C'est l'une des livraisons les moins chères de Lyon.",
+      "Oui, nous livrons gratuitement ! Le minimum de commande est de 15€ dans le 5ème arrondissement, et varie selon le secteur de livraison. Contactez-nous pour plus d'infos.",
   },
   {
     question: 'Votre viande est-elle halal ?',

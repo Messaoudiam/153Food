@@ -6,7 +6,7 @@ import { ContactForm } from '@/components/contact-form'
 export const metadata: Metadata = {
   title: 'Contact - 153 Food Lyon 5 | Restaurant Halal',
   description:
-    'Contactez 153 Food Lyon 5ème ☎️ 09 51 74 58 04 📍 153 Avenue Barthélémy Buyer. Commandez pizzas, burgers, tacos halal. Livraison 0.50€ dès 15€.',
+    'Contactez 153 Food Lyon 5ème ☎️ 09 51 74 58 04 📍 153 Avenue Barthélémy Buyer. Commandez pizzas, burgers, tacos halal. Livraison GRATUITE dès 15€ d&apos;achat*.',
 }
 
 export default function ContactPage() {

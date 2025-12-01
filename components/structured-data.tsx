@@ -85,7 +85,7 @@ export function StructuredData() {
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: 4.3,
+      ratingValue: 4.4,
       reviewCount: 130,
       bestRating: 5,
       worstRating: 1,
@@ -102,7 +102,7 @@ export function StructuredData() {
     menu: `${siteConfig.url}/menu`,
     starRating: {
       '@type': 'Rating',
-      ratingValue: 4.3,
+      ratingValue: 4.4,
     },
     amenityFeature: [
       {
@@ -136,13 +136,13 @@ export function StructuredData() {
         '@type': 'Offer',
         name: 'Livraison à domicile',
         description:
-          "Livraison à 0.50€ seulement dès 15€ d'achat sur Lyon 5ème",
+          "Livraison gratuite dès 15€ d&apos;achat* (minimum variable selon secteur)",
         availability: 'https://schema.org/InStock',
         priceSpecification: {
           '@type': 'DeliveryChargeSpecification',
           appliesToDeliveryMethod:
             'http://purl.org/goodrelations/v1#DeliveryModeDirectDownload',
-          price: 0.5,
+          price: 0,
           priceCurrency: 'EUR',
           eligibleTransactionVolume: {
             '@type': 'PriceSpecification',

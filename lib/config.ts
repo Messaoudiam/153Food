@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: '153 Food',
   description:
-    'Restaurant halal à Lyon 5ème - Pizzas, burgers, tacos. Livraison 0.50€ dès 15€ ! À emporter ou sur place. Noté 4.3/5.',
+    'Restaurant halal à Lyon 5ème - Pizzas, burgers, tacos. Livraison gratuite dès 15€ d&apos;achat* ! À emporter ou sur place. Noté 4.4/5.',
   url: 'https://153food.fr',
   ogImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&h=630&fit=crop&q=80', // Pizza pour Open Graph
   keywords: [
