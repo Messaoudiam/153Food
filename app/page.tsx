@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   Clock,
   MapPin,
@@ -16,12 +17,32 @@ import { Separator } from '@/components/ui/separator'
 import { FAQ } from '@/components/faq'
 import { OpenStatus } from '@/components/open-status'
 
+// Images Unsplash pour les catégories
+const foodImages = {
+  hero: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&q=80', // Pizza appétissante
+  burger: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80', // Burger juteux
+  pizza: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80', // Pizza four
+  tacos: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80', // Wrap/Tacos français style
+  salad: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80', // Salade fraîche
+}
+
 export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Mobile First */}
-      <section className="relative flex min-h-[60vh] items-center justify-center bg-gradient-to-br from-orange-50 to-yellow-50 px-4 py-16 md:min-h-[70vh] md:py-24">
-        <div className="container mx-auto text-center">
+      <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden px-4 py-16 md:min-h-[70vh] md:py-24">
+        {/* Background Image */}
+        <Image
+          src={foodImages.hero}
+          alt="Délicieuse pizza"
+          fill
+          className="object-cover"
+          priority
+          quality={85}
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-orange-900/40" />
+        <div className="container relative z-10 mx-auto text-center">
           {/* Open Status - Mobile Only */}
           <div className="mb-4 flex justify-center md:hidden">
             <OpenStatus />
@@ -32,33 +53,73 @@ export default function Home() {
             <Badge
               variant="success"
               size="lg"
-              className="gap-2 rounded-full px-4 py-2 text-sm shadow-sm md:text-base"
+              className="gap-2 rounded-full bg-white px-4 py-2 text-sm text-green-700 shadow-lg md:text-base"
             >
               <Truck className="h-5 w-5" aria-hidden="true" />
               Livraison à 0.50€ seulement - Dès 15€ d&apos;achat
             </Badge>
           </div>
 
-          <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-            Bienvenue chez <span className="text-orange-600">153 Food</span>
+          <h1 className="mb-4 text-4xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
+            Bienvenue chez<br className="md:hidden" /> <span className="text-orange-400">153 Food</span>
           </h1>
-          <p className="mx-auto mb-8 max-w-2xl text-base text-muted-foreground md:text-lg lg:text-xl">
+          <p className="mx-auto mb-8 max-w-2xl text-base text-gray-200 md:text-lg lg:text-xl">
             Votre restaurant rapide au cœur de Lyon 5ème. Découvrez nos
             spécialités préparées avec passion et des produits frais.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/menu"
-              className="inline-flex h-11 items-center justify-center rounded-md bg-orange-600 px-8 text-sm font-medium text-white transition-colors hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="inline-flex h-11 items-center justify-center rounded-md bg-orange-600 px-8 text-sm font-medium text-white shadow-lg transition-colors hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               Voir le menu
             </Link>
             <Link
               href="/contact"
-              className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="inline-flex h-11 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-gray-900 shadow-lg transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               Nous contacter
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Food Showcase Section */}
+      <section className="bg-white px-4 py-12 md:py-16">
+        <div className="container mx-auto">
+          <h2 className="mb-8 text-center text-2xl font-bold md:mb-12 md:text-3xl">
+            Nos spécialités
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { name: 'Burgers', image: foodImages.burger, href: '/menu#burgers' },
+              { name: 'Pizzas', image: foodImages.pizza, href: '/menu#pizzas' },
+              { name: 'Tacos & Sandwichs', image: foodImages.tacos, href: '/menu#sandwichs' },
+              { name: 'Salades', image: foodImages.salad, href: '/menu#salades' },
+            ].map((category) => (
+              <Link
+                key={category.name}
+                href={category.href}
+                className="group relative overflow-hidden rounded-xl"
+              >
+                <div className="aspect-square relative">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-xl font-bold text-white">{category.name}</h3>
+                    <span className="text-sm text-orange-300 group-hover:text-orange-200">
+                      Découvrir →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

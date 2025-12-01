@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import {
   burgers,
   pizzasBaseTomate,
@@ -8,6 +9,17 @@ import {
   desserts,
   boissons,
 } from '@/lib/menu-data'
+
+// Images Unsplash pour les catégories
+const categoryImages = {
+  hero: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80', // Table de restaurant
+  pizza: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80',
+  burger: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80',
+  sandwich: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80', // Wrap/Tacos français
+  salad: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80',
+  dessert: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80',
+  drinks: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80',
+}
 
 export const metadata: Metadata = {
   title: 'Menu - 153 Food Lyon 5 | Burgers, Pizzas, Tacos Halal',
@@ -210,10 +222,19 @@ export default function MenuPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-orange-600 px-4 py-12 text-white md:py-16">
-        <div className="container mx-auto text-center">
+      <section className="relative overflow-hidden px-4 py-16 text-white md:py-24">
+        <Image
+          src={categoryImages.hero}
+          alt="Notre menu"
+          fill
+          className="object-cover"
+          priority
+          quality={85}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-orange-900/50" />
+        <div className="container relative z-10 mx-auto text-center">
           <h1 className="mb-4 text-3xl font-bold md:text-5xl">Notre Menu</h1>
-          <p className="mx-auto max-w-2xl text-sm md:text-base">
+          <p className="mx-auto max-w-2xl text-sm text-gray-200 md:text-base">
             Cuisine halal • Livraison disponible • À emporter ou sur place
           </p>
         </div>
@@ -224,10 +245,21 @@ export default function MenuPage() {
         <div className="container mx-auto max-w-5xl">
           <div className="space-y-8 md:space-y-12">
             {/* PIZZAS BASE TOMATE */}
-            <div>
-              <h2 className="mb-4 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:mb-6 md:text-3xl">
-                Pizzas - Base Tomate
-              </h2>
+            <div id="pizzas" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.pizza}
+                    alt="Pizzas"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Pizzas - Base Tomate
+                </h2>
+              </div>
               <div className="mb-4 rounded-lg bg-orange-50 p-4">
                 <p className="font-semibold text-orange-900">
                   🎁 OFFRE SPÉCIALE : Pizza 40cm au prix de la 33cm
@@ -337,10 +369,21 @@ export default function MenuPage() {
             </div>
 
             {/* SANDWICHS */}
-            <div>
-              <h2 className="mb-4 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:mb-6 md:text-3xl">
-                Sandwichs
-              </h2>
+            <div id="sandwichs" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.sandwich}
+                    alt="Sandwichs et Tacos"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Sandwichs
+                </h2>
+              </div>
               <div className="mb-4 rounded-lg bg-blue-50 p-3 text-sm">
                 <p className="font-medium">
                   Viandes au choix : Escalope, Merguez, Steak, Cordon Bleu,
@@ -412,10 +455,21 @@ export default function MenuPage() {
             </div>
 
             {/* BURGERS */}
-            <div>
-              <h2 className="mb-4 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:mb-6 md:text-3xl">
-                Burgers
-              </h2>
+            <div id="burgers" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.burger}
+                    alt="Burgers"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Burgers
+                </h2>
+              </div>
               <div className="mb-4 rounded-lg bg-blue-50 p-3 text-sm">
                 <p className="font-medium">
                   2 prix affichés : Menu (avec frites + boisson) / Seul
@@ -448,10 +502,21 @@ export default function MenuPage() {
             </div>
 
             {/* SALADES */}
-            <div>
-              <h2 className="mb-4 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:mb-6 md:text-3xl">
-                Salades
-              </h2>
+            <div id="salades" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.salad}
+                    alt="Salades"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Salades
+                </h2>
+              </div>
               <div className="grid gap-4 sm:grid-cols-2">
                 {salades.map((item, index) => (
                   <div
@@ -475,10 +540,21 @@ export default function MenuPage() {
             </div>
 
             {/* DESSERTS */}
-            <div>
-              <h2 className="mb-4 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:mb-6 md:text-3xl">
-                Desserts
-              </h2>
+            <div id="desserts" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.dessert}
+                    alt="Desserts"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Desserts
+                </h2>
+              </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {desserts.map((item, index) => (
                   <div
@@ -504,10 +580,21 @@ export default function MenuPage() {
             </div>
 
             {/* BOISSONS */}
-            <div>
-              <h2 className="mb-4 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:mb-6 md:text-3xl">
-                Boissons
-              </h2>
+            <div id="boissons" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.drinks}
+                    alt="Boissons"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Boissons
+                </h2>
+              </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {boissons.map((item, index) => (
                   <div

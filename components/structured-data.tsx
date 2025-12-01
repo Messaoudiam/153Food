@@ -8,9 +8,9 @@ export function StructuredData() {
     name: restaurantInfo.name,
     alternateName: '153 Food Lyon',
     image: [
-      `${siteConfig.url}${siteConfig.ogImage}`,
-      `${siteConfig.url}/images/restaurant-front.jpg`,
-      `${siteConfig.url}/images/food-menu.jpg`,
+      siteConfig.ogImage,
+      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&h=800&fit=crop&q=80', // Burger
+      'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200&h=800&fit=crop&q=80', // Pizza
     ],
     description: siteConfig.description,
     url: siteConfig.url,
