@@ -13,7 +13,7 @@ const faqs: FAQItem[] = [
   {
     question: "Quels sont vos horaires d'ouverture ?",
     answer:
-      'Nous sommes ouverts du lundi au jeudi de 11h à 14h et de 18h à 23h, le vendredi de 14h à 23h, le samedi de 11h à 23h, et le dimanche de 11h à 15h puis de 17h30 à 23h.',
+      'Nous sommes fermés le lundi. Du mardi au jeudi : 11h-14h et 18h-23h. Vendredi : 14h-23h. Samedi : 11h-23h. Dimanche : 11h-15h et 17h30-23h.',
   },
   {
     question: 'Livrez-vous à domicile ? Quels sont les frais ?',

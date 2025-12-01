@@ -3,7 +3,7 @@ export const siteConfig = {
   description:
     'Restaurant halal à Lyon 5ème - Pizzas, burgers, tacos. Livraison 0.50€ dès 15€ ! À emporter ou sur place. Noté 4.3/5.',
   url: 'https://153food.fr',
-  ogImage: '/logo.svg', // TODO: Replace with /images/og-image.jpg (1200x630px)
+  ogImage: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&h=630&fit=crop&q=80', // Pizza pour Open Graph
   keywords: [
     'restaurant Lyon 5',
     'fast food Lyon',
@@ -48,7 +48,7 @@ export const restaurantInfo = {
     creditCards: true,
   },
   social: {
-    facebook: 'https://facebook.com/153food',
+    facebook: 'https://www.facebook.com/people/Le-153/100066913394572/',
     instagram: 'https://instagram.com/153food',
     twitter: 'https://twitter.com/153food',
   },
