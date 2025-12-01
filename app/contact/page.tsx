@@ -59,12 +59,20 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="mb-1 font-semibold">Téléphone</h3>
-                      <a
-                        href={`tel:${restaurantInfo.contact.phone}`}
-                        className="text-sm text-muted-foreground hover:text-orange-600 hover:underline"
-                      >
-                        {restaurantInfo.contact.phone}
-                      </a>
+                      <div className="flex flex-col gap-1">
+                        <a
+                          href={`tel:${restaurantInfo.contact.phone}`}
+                          className="text-sm text-muted-foreground hover:text-orange-600 hover:underline"
+                        >
+                          {restaurantInfo.contact.phone}
+                        </a>
+                        <a
+                          href={`tel:${restaurantInfo.contact.mobile}`}
+                          className="text-sm text-muted-foreground hover:text-orange-600 hover:underline"
+                        >
+                          {restaurantInfo.contact.mobile}
+                        </a>
+                      </div>
                     </div>
                   </div>
 

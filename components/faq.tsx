@@ -28,7 +28,7 @@ const faqs: FAQItem[] = [
   {
     question: 'Puis-je commander par téléphone ?',
     answer:
-      'Absolument ! Appelez-nous au 09 51 74 58 04 pour passer votre commande. Nous acceptons aussi les commandes sur place.',
+      'Absolument ! Appelez-nous au 09 51 74 58 04 ou au +33 7 82 29 93 54 pour passer votre commande. Nous acceptons aussi les commandes sur place et via WhatsApp.',
   },
   {
     question: 'Avez-vous des options végétariennes ?',

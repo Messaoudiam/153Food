@@ -24,12 +24,20 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" aria-hidden="true" />
-                <a
-                  href={`tel:${restaurantInfo.contact.phone}`}
-                  className="hover:underline"
-                >
-                  {restaurantInfo.contact.phone}
-                </a>
+                <div className="flex flex-col">
+                  <a
+                    href={`tel:${restaurantInfo.contact.phone}`}
+                    className="hover:underline"
+                  >
+                    {restaurantInfo.contact.phone}
+                  </a>
+                  <a
+                    href={`tel:${restaurantInfo.contact.mobile}`}
+                    className="hover:underline"
+                  >
+                    {restaurantInfo.contact.mobile}
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" aria-hidden="true" />

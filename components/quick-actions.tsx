@@ -11,7 +11,8 @@ import {
 
 export function QuickActions() {
   const phoneNumber = restaurantInfo.contact.phone.replace(/\s/g, '')
-  const whatsappNumber = phoneNumber.replace('+33', '33')
+  const mobileNumber = restaurantInfo.contact.mobile.replace(/\s/g, '')
+  const whatsappNumber = mobileNumber.replace('+33', '33')
 
   return (
     <TooltipProvider>

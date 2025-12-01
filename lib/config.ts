@@ -29,6 +29,7 @@ export const restaurantInfo = {
   },
   contact: {
     phone: '09 51 74 58 04',
+    mobile: '+33 7 82 29 93 54',
     email: 'contact@153food.fr',
   },
   hours: {

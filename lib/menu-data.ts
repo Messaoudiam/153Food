@@ -47,8 +47,8 @@ export const burgers: BurgerItem[] = [
   { name: 'Maxi Fish', priceMenu: '6.00', priceSingle: '4.00' },
   { name: 'Maxi Chicken', priceMenu: '6.00', priceSingle: '4.00' },
   { name: 'Big', priceMenu: '6.50', priceSingle: '4.50' },
-  { name: "Bob's", priceMenu: '6.50', priceSingle: '4.50' },
-  { name: '163', priceMenu: '7.00', priceSingle: '5.00' },
+  { name: "Bap's", priceMenu: '6.50', priceSingle: '4.50' },
+  { name: '153', priceMenu: '7.00', priceSingle: '5.00' },
   { name: 'Mega Bun', priceMenu: '8.00', priceSingle: '6.00' },
 ]
 
@@ -326,17 +326,12 @@ export const boissons: BoissonItem[] = [
   {
     name: 'Boissons',
     size: '33cl',
-    price: '1.50',
+    price: '2.00',
   },
   {
     name: 'Boissons',
     size: '2cl',
     price: '2.00',
-  },
-  {
-    name: 'Coca-Cola',
-    size: '33cl',
-    price: '3.00',
   },
   {
     name: 'Boissons',
