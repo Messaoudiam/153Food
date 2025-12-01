@@ -66,7 +66,7 @@ export function Breadcrumb() {
                   {index === breadcrumbItems.length - 1 ? (
                     <BreadcrumbPage>{item.name}</BreadcrumbPage>
                   ) : (
-                    <BreadcrumbLink render={<Link href={item.href} />}>
+                    <BreadcrumbLink render={<Link href={item.href} className="inline-flex items-center" />}>
                       {index === 0 && <Home className="mr-1 h-4 w-4" />}
                       {item.name}
                     </BreadcrumbLink>
