@@ -32,7 +32,7 @@ export function OpenStatus() {
       const todayKey = dayMap[currentDay]
       const todayHours = restaurantInfo.hours[todayKey]?.open
 
-      if (!todayHours) {
+      if (!todayHours || todayHours === 'Fermé') {
         setStatus('closed')
         return
       }
