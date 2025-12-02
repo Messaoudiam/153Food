@@ -306,6 +306,16 @@ export const desserts: DessertItem[] = [
     price: '2.00',
   },
   {
+    name: 'Glaces',
+    description: '🍨 Häagen-Dazs - Différents parfums',
+    price: '3.00',
+  },
+  {
+    name: 'Salade de Fruits',
+    description: '🍓 Fruits frais de saison',
+    price: '3.00',
+  },
+  {
     name: 'Tarte Coco & Daim',
     description: '🥥 Gourmandise maison',
     price: '3.50',
