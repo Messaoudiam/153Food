@@ -306,9 +306,14 @@ export const desserts: DessertItem[] = [
     price: '2.00',
   },
   {
-    name: 'Glaces',
-    description: '🍨 Häagen-Dazs - Différents parfums',
+    name: 'Glaces Häagen-Dazs 100ml',
+    description: '🍨 Différents parfums',
     price: '3.00',
+  },
+  {
+    name: 'Glaces Häagen-Dazs 500ml',
+    description: '🍨 Différents parfums',
+    price: '7.00',
   },
   {
     name: 'Salade de Fruits',
@@ -322,7 +327,7 @@ export const desserts: DessertItem[] = [
   },
   {
     name: 'Tiramisu',
-    description: '🍰 Fait maison',
+    description: '🍰 Caramel, Brownie, Oréo, Spéculoos',
     price: '3.50',
   },
 ]
