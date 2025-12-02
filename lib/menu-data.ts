@@ -301,46 +301,46 @@ export const salades: SaladeItem[] = [
 
 export const desserts: DessertItem[] = [
   {
-    name: 'Glaces',
-    description: '🍨 Häagen-Dazs - Différents parfums',
-    price: '3.00',
+    name: 'Barre chocolatée',
+    description: '🍫 Différentes variétés',
+    price: '2.00',
   },
   {
-    name: 'Tiramisu Maison',
+    name: 'Tarte Coco & Daim',
+    description: '🥥 Gourmandise maison',
+    price: '3.50',
+  },
+  {
+    name: 'Tiramisu',
     description: '🍰 Fait maison',
     price: '3.50',
-  },
-  {
-    name: 'Brownie',
-    description: '🍫 Chocolat fondant',
-    price: '3.50',
-  },
-  {
-    name: 'Salade de Fruits',
-    description: '🍓 Fruits frais de saison',
-    price: '3.00',
   },
 ]
 
 export const boissons: BoissonItem[] = [
   {
-    name: 'Boissons',
+    name: 'Canette',
     size: '33cl',
     price: '2.00',
   },
   {
-    name: 'Boissons',
-    size: '2cl',
-    price: '2.00',
+    name: 'Bouteille en verre',
+    size: '25cl',
+    price: '2.50',
   },
   {
-    name: 'Boissons',
-    size: '3cl',
-    price: '3.00',
+    name: 'Bouteille',
+    size: '1.5L',
+    price: '3.50',
   },
   {
-    name: 'Oasis',
+    name: 'Bouteille',
     size: '2L',
+    price: '4.00',
+  },
+  {
+    name: 'Bouteille en verre',
+    size: '1L',
     price: '4.00',
   },
 ]
