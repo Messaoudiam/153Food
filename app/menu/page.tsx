@@ -5,6 +5,7 @@ import {
   pizzasBaseTomate,
   pizzasBaseCreme,
   sandwichs,
+  snacks,
   salades,
   desserts,
   boissons,
@@ -19,6 +20,8 @@ const categoryImages = {
     'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80',
   sandwich:
     'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80', // Wrap/Tacos français
+  snacks:
+    'https://images.unsplash.com/photo-1562967914-608f82629710?w=600&q=80', // Frites/Snacks
   salad:
     'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80',
   dessert:
@@ -500,6 +503,64 @@ export default function MenuPage() {
                         <p className="text-lg font-semibold">
                           {item.priceSingle}€
                         </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* SNACKS / TEX MEX */}
+            <div id="snacks" className="scroll-mt-20">
+              <div className="mb-6 flex items-center gap-4">
+                <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
+                  <Image
+                    src={categoryImages.snacks}
+                    alt="Snacks"
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                  />
+                </div>
+                <h2 className="border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                  Snacks & Tex Mex
+                </h2>
+              </div>
+              <div className="mb-4 rounded-lg bg-yellow-50 p-3 text-sm">
+                <p className="font-medium">
+                  🍟 Supplément potatoes : +1.50€
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {snacks.map((item, index) => (
+                  <div
+                    key={index}
+                    className="rounded-lg bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1">
+                        <h3 className="text-lg font-semibold">{item.name}</h3>
+                        {item.description && (
+                          <p className="mt-1 text-sm text-muted-foreground">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
+                      <div className="text-right">
+                        {item.priceGrande ? (
+                          <div className="flex flex-col">
+                            <span className="text-lg font-bold text-orange-600">
+                              {item.price}€
+                            </span>
+                            <span className="text-sm text-muted-foreground">
+                              Grande: {item.priceGrande}€
+                            </span>
+                          </div>
+                        ) : (
+                          <span className="text-xl font-bold text-orange-600">
+                            {item.price}€
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
