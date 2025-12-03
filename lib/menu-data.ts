@@ -401,32 +401,32 @@ export const snacks: SnackItem[] = [
   },
   {
     name: 'Bouchées Camemberts',
-    description: '🧀 5 pcs',
+    description: '🧀 5 pcs + frites',
     price: '7.00',
   },
   {
     name: "Nugget's Frites",
-    description: '🍗 5 pcs',
+    description: '🍗 5 pcs + frites',
     price: '7.00',
   },
   {
     name: 'Jalapenos',
-    description: '🌶️ 5 pcs',
+    description: '🌶️ 5 pcs + frites',
     price: '7.00',
   },
   {
     name: 'Sticks Mozza',
-    description: '🧀 5 pcs',
+    description: '🧀 5 pcs + frites',
     price: '7.00',
   },
   {
     name: 'Onion Rings',
-    description: '🧅 10 pcs',
+    description: '🧅 10 pcs + frites',
     price: '7.00',
   },
   {
     name: 'Wings',
-    description: '🍗 6 pcs',
+    description: '🍗 6 pcs + frites',
     price: '7.00',
   },
 ]
