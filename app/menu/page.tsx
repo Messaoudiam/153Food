@@ -508,21 +508,6 @@ export default function MenuPage() {
                     </div>
                   </div>
                 ))}
-
-                {/* MENU ENFANT */}
-                <div className="rounded-lg bg-gradient-to-r from-yellow-50 to-orange-50 p-4 shadow-sm border-2 border-dashed border-orange-300">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold">{menuEnfant.name} 🎁</h3>
-                      <p className="mt-1 text-sm text-muted-foreground">
-                        {menuEnfant.description}
-                      </p>
-                    </div>
-                    <span className="text-xl font-bold text-orange-600">
-                      {menuEnfant.price}€
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -581,6 +566,26 @@ export default function MenuPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* MENU ENFANT */}
+            <div id="menu-enfant" className="scroll-mt-20">
+              <h2 className="mb-6 border-b-2 border-orange-600 pb-2 text-2xl font-bold md:text-3xl">
+                Menu Enfant 🧒
+              </h2>
+              <div className="rounded-lg bg-gradient-to-r from-yellow-50 to-orange-50 p-6 shadow-sm border-2 border-dashed border-orange-300">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold">{menuEnfant.name} 🎁</h3>
+                    <p className="mt-2 text-muted-foreground">
+                      {menuEnfant.description}
+                    </p>
+                  </div>
+                  <span className="text-2xl font-bold text-orange-600">
+                    {menuEnfant.price}€
+                  </span>
+                </div>
               </div>
             </div>
 
