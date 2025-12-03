@@ -40,6 +40,13 @@ export interface BoissonItem {
   price: string
 }
 
+export interface SnackItem {
+  name: string
+  description?: string
+  price: string
+  priceGrande?: string
+}
+
 export const burgers: BurgerItem[] = [
   { name: 'Cheese', priceMenu: '6.50', priceSingle: '3.50' },
   { name: 'Maxi Beef', priceMenu: '8.00', priceSingle: '5.00' },
@@ -369,8 +376,64 @@ export const boissons: BoissonItem[] = [
   },
 ]
 
+export const snacks: SnackItem[] = [
+  {
+    name: 'Croque Monsieur',
+    description: '🥪 Classique jambon-fromage',
+    price: '3.50',
+  },
+  {
+    name: 'Nems Maison',
+    description: '🥟 5 pcs - Volaille ou crevettes',
+    price: '7.00',
+  },
+  {
+    name: 'Potatoes',
+    description: '🥔 Petite ou Grande portion',
+    price: '3.50',
+    priceGrande: '4.50',
+  },
+  {
+    name: 'Frites',
+    description: '🍟 Petite ou Grande portion',
+    price: '3.00',
+    priceGrande: '3.50',
+  },
+  {
+    name: 'Bouchées Camemberts',
+    description: '🧀 5 pcs',
+    price: '7.00',
+  },
+  {
+    name: "Nugget's Frites",
+    description: '🍗 5 pcs',
+    price: '7.00',
+  },
+  {
+    name: 'Jalapenos',
+    description: '🌶️ 5 pcs',
+    price: '7.00',
+  },
+  {
+    name: 'Sticks Mozza',
+    description: '🧀 5 pcs',
+    price: '7.00',
+  },
+  {
+    name: 'Onion Rings',
+    description: '🧅 10 pcs',
+    price: '7.00',
+  },
+  {
+    name: 'Wings',
+    description: '🍗 6 pcs',
+    price: '7.00',
+  },
+]
+
 export const menuInfo = {
   burgerMenuIncludes: 'Menu burger : frites + boisson',
-  specialOffer: 'Offre spéciale : Pizza 40cm au prix du 33cm (Lundi - Jeudi)',
-  deliveryInfo: "Livraison gratuite dès 15€ d&apos;achat* (minimum variable selon secteur)",
+  specialOffer: 'Offre spéciale : Pizza 40cm au prix du 33cm (Mardi - Jeudi)',
+  deliveryInfo: "Livraison gratuite dès 15€ d'achat* (minimum variable selon secteur)",
+  supplementPotatoes: 'Supplément potatoes : +1.50€',
 }
