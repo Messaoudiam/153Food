@@ -31,7 +31,7 @@ export function Navigation() {
           >
             <Image
               src="/logo.svg"
-              alt="153 Food"
+              alt="153 Food - Restaurant halal Lyon 5"
               width={120}
               height={40}
               className="h-10 w-auto md:h-12"

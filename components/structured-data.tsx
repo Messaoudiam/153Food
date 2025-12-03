@@ -40,6 +40,7 @@ export function StructuredData() {
       longitude: 4.796997,
     },
     openingHoursSpecification: [
+      // Lundi absent = fermé (méthode recommandée par Google/Schema.org)
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Tuesday', 'Thursday'],

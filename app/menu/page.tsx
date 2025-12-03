@@ -32,9 +32,9 @@ const categoryImages = {
 }
 
 export const metadata: Metadata = {
-  title: 'Menu - 153 Food Lyon 5 | Burgers, Pizzas, Tacos Halal',
+  title: 'Menu 153 Food Lyon 5 | Pizzas, Burgers, Tacos Halal - Livraison Gratuite',
   description:
-    '🍕 Menu complet 153 Food Lyon 5 : 9 burgers, 21 pizzas, 8 sandwichs, tacos, salades, desserts (Häagen-Dazs, tiramisu, brownie) et boissons. Cuisine 100% halal. Livraison GRATUITE dès 15€ d&apos;achat*. Offre spéciale pizza 40cm au prix 33cm !',
+    'Découvrez le menu complet 153 Food Lyon 5ème : pizzas artisanales, burgers, tacos, sandwichs, salades et desserts. Cuisine 100% halal. Livraison GRATUITE dès 15€. Offre pizza 40cm au prix du 33cm du mardi au jeudi !',
 }
 
 export default function MenuPage() {
@@ -235,7 +235,7 @@ export default function MenuPage() {
       <section className="relative overflow-hidden px-4 py-16 text-white md:py-24">
         <Image
           src={categoryImages.hero}
-          alt="Notre menu"
+          alt="Menu restaurant 153 Food Lyon 5 - pizzas burgers tacos halal"
           fill
           className="object-cover"
           priority
@@ -260,7 +260,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.pizza}
-                    alt="Pizzas"
+                    alt="Pizzas halal artisanales 153 Food Lyon 5ème"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -384,7 +384,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.sandwich}
-                    alt="Sandwichs et Tacos"
+                    alt="Tacos sandwichs halal Lyon 5 - 153 Food"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -470,7 +470,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.burger}
-                    alt="Burgers"
+                    alt="Burgers halal 153 Food Lyon 5 - viande fraîche"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -517,7 +517,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.snacks}
-                    alt="Snacks"
+                    alt="Snacks tex mex frites nuggets 153 Food Lyon"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -595,7 +595,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.salad}
-                    alt="Salades"
+                    alt="Salades fraîches restaurant halal Lyon 5"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -633,7 +633,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.dessert}
-                    alt="Desserts"
+                    alt="Desserts glaces tiramisu 153 Food Lyon"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -673,7 +673,7 @@ export default function MenuPage() {
                 <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full md:h-20 md:w-20">
                   <Image
                     src={categoryImages.drinks}
-                    alt="Boissons"
+                    alt="Boissons fraîches restaurant 153 Food Lyon 5"
                     fill
                     className="object-cover"
                     sizes="80px"

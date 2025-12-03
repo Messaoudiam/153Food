@@ -34,7 +34,7 @@ export default function Home() {
         {/* Background Image */}
         <Image
           src={foodImages.hero}
-          alt="Délicieuse pizza"
+          alt="Pizza artisanale halal 153 Food Lyon 5ème - livraison gratuite"
           fill
           className="object-cover"
           priority
@@ -92,10 +92,10 @@ export default function Home() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { name: 'Burgers', image: foodImages.burger, href: '/menu#burgers' },
-              { name: 'Pizzas', image: foodImages.pizza, href: '/menu#pizzas' },
-              { name: 'Tacos & Sandwichs', image: foodImages.tacos, href: '/menu#sandwichs' },
-              { name: 'Salades', image: foodImages.salad, href: '/menu#salades' },
+              { name: 'Burgers', image: foodImages.burger, href: '/menu#burgers', alt: 'Burger halal 153 Food Lyon 5 - viande fraîche' },
+              { name: 'Pizzas', image: foodImages.pizza, href: '/menu#pizzas', alt: 'Pizza artisanale halal Lyon 5ème - 153 Food' },
+              { name: 'Tacos & Sandwichs', image: foodImages.tacos, href: '/menu#sandwichs', alt: 'Tacos et sandwichs halal Lyon 5 - 153 Food' },
+              { name: 'Salades', image: foodImages.salad, href: '/menu#salades', alt: 'Salade fraîche restaurant 153 Food Lyon' },
             ].map((category) => (
               <Link
                 key={category.name}
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="aspect-square relative">
                   <Image
                     src={category.image}
-                    alt={category.name}
+                    alt={category.alt}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

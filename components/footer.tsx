@@ -128,6 +128,17 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {restaurantInfo.name}. Tous droits
             réservés.
           </p>
+          <p className="mt-2">
+            Site réalisé par{' '}
+            <a
+              href="https://forge-agency.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-orange-600 hover:underline"
+            >
+              Forge Agency
+            </a>
+          </p>
         </div>
       </div>
     </footer>
