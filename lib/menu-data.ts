@@ -238,7 +238,7 @@ export const sandwichs: SandwichItem[] = [
     description:
       '🥖 Viandes au choix : Escalope, Merguez, Steak, Cordon Bleu, Nuggets',
     priceSingle: '6.50',
-    priceMenu: '9.50',
+    priceMenu: '8.00',
   },
   {
     name: 'Tacos',
