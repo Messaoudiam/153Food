@@ -397,7 +397,7 @@ export default function MenuPage() {
               <div className="mb-4 rounded-lg bg-blue-50 p-3 text-sm">
                 <p className="font-medium">
                   Viandes au choix : Escalope, Merguez, Steak, Cordon Bleu,
-                  Nuggets, Kebab
+                  Nuggets, Kebab, Chicken
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">
                   Suppléments : Œuf, Sauce fromagère, Poivrons, Fromage +0.50€ • Potatoes +1€ • Viande supplémentaire +2€
