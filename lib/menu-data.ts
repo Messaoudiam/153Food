@@ -431,6 +431,12 @@ export const snacks: SnackItem[] = [
   },
 ]
 
+export const menuEnfant = {
+  name: 'Menu Enfant',
+  description: '🧒 1 Hamburger ou 4 Nuggets + Frites + Capri Sun + Compote ou Candy Up + Surprise',
+  price: '7.00',
+}
+
 export const menuInfo = {
   burgerMenuIncludes: 'Menu burger : frites + boisson',
   specialOffer: 'Offre spéciale : Pizza 40cm au prix du 33cm (Mardi - Jeudi)',
